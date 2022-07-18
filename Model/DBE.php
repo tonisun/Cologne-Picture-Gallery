@@ -17,9 +17,15 @@ enum DBE : string {
         echo $ini_data['MySQL']['dbname'];
         
         return match ($this){
-            self::MySQL => "mysql:host=".$ini_data['MySQL']['host'].";dbname=".$ini_data['MySQL']['dbname'].";charset=utf8",
-            self::SQLite => 'sqlite:db/hospital.db',
-            self::PostgreSQL => '',
+            self::MySQL =>  "mysql:host=".$ini_data['MySQL']['host'].
+                            ";dbname=".$ini_data['MySQL']['dbname'].
+                            ";charset=utf8",
+            
+            self::SQLite => "sqlite:".$ini_data['SQLite']['path'],
+
+            self::PostgreSQL => "pgsql:host=".$ini_data['PostgreSQL']['host'].
+                                ";port=".$ini_data['PostgreSQL']['port'].
+                                ";dbname=".$ini_data['PostgreSQL']['dbname'].";",
             default => '',
         };
     }
