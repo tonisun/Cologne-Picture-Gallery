@@ -12,8 +12,8 @@ enum DBE : string {
     
 
     public function getDNS(): string { 
-        #$iniData = parse_ini_file('DB/config.ini', true);
-        $iniData = parse_ini_file('../DB/config.ini', true);
+        $iniData = parse_ini_file('DB/config.ini', true);
+        #$iniData = parse_ini_file('../DB/config.ini', true);
         //print_r($ini_data['MySQL']);
         //print_r($ini_data['PostgreSQL']);
         //print_r($ini_data['SQLite']);
@@ -33,22 +33,58 @@ enum DBE : string {
         };
     }
 
+    public function getUser(): string { 
+        $iniData = parse_ini_file('DB/config.ini', true);
+        #$iniData = parse_ini_file('../DB/config.ini', true);
+        //print_r($ini_data['MySQL']);
+        //print_r($ini_data['PostgreSQL']);
+        //print_r($ini_data['SQLite']);
+        #echo $ini_data['MySQL']['dbname'];
+        
+        return match ($this){
+            self::MySQL =>  $iniData['MySQL']['user'],
+            
+            self::SQLite => $iniData['SQLite']['user'],
 
+            self::PostgreSQL => $iniData['PostgreSQL']['user'],
+            default => '',
+        };
+    }
+
+    public function getPass(): string { 
+        $iniData = parse_ini_file('DB/config.ini', true);
+        #$iniData = parse_ini_file('../DB/config.ini', true);
+        //print_r($ini_data['MySQL']);
+        //print_r($ini_data['PostgreSQL']);
+        //print_r($ini_data['SQLite']);
+        #echo $ini_data['MySQL']['dbname'];
+        
+        return match ($this){
+            self::MySQL =>  $iniData['MySQL']['password'],
+            
+            self::SQLite => $iniData['SQLite']['password'],
+
+            self::PostgreSQL => $iniData['PostgreSQL']['password'],
+            default => '',
+        };
+    }
 }
 //- DNS alt
-$dbe = DBE::MySQL;
-echo '<pre>';
-echo DBE::MySQL->getDNS();
-echo '</pre>';
+// $dbe = DBE::MySQL;
+// echo '<pre>';
+// echo $dbe->getDNS();
+// echo $dbe->getUser();
+// echo $dbe->getPass();
+// echo '</pre>';
 
-echo '<pre>';
-print_r($dbe);
-echo '</pre>';
+// echo '<pre>';
+// print_r($dbe);
+// echo '</pre>';
 
-echo '<pre>';
-echo $dbe->value;
-echo '</pre>';
+// echo '<pre>';
+// echo $dbe->value;
+// echo '</pre>';
 
-echo '<pre>';
-echo $dbe->name;
-echo '</pre>';
+// echo '<pre>';
+// echo $dbe->name;
+// echo '</pre>';
