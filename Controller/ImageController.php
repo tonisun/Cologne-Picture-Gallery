@@ -20,7 +20,7 @@ class ImageController implements Controller {
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
             ]);
           } catch (PDOException $e) {
-            echo 'Probleme mit der MySQL Datenbankverbindung...';
+            echo "Probleme mit der ".$db->getDNS()." Datenbankverbindung...";
             die();
           }
     }
