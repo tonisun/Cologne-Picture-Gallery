@@ -1,3 +1,4 @@
 .vscode/
 vendors/
 DB/config.ini
+View/assets/images/*

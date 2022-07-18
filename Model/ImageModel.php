@@ -17,8 +17,8 @@ class ImageModel  {
     private int $id;
 
     /** @var string(100) */
-    #[Column(type: Types::VARCHAR, name: 'fileName')]
-    private string $fileName;
+    #[Column(type: Types::VARCHAR, name: 'filename')]
+    private string $filename;
 
     /** @var string(1000) */
     #[Column(type: Types::VARCHAR, name: 'title')]
@@ -40,7 +40,7 @@ class ImageModel  {
     }
 
     public function getFileName(): string {
-        return $this->fileName;
+        return $this->filename;
     }
 
     public function getTitle(): string {
