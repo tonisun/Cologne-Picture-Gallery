@@ -1,6 +1,7 @@
 <?php
 
 /**
+ * DataBaseEngies
  * 
  * @tonisun
  */
@@ -11,21 +12,23 @@ enum DBE : string {
     
 
     public function getDNS(): string { 
-
-        $ini_data = parse_ini_file('../DB/config.ini', true);
-        print_r($ini_data['MySQL']);
-        echo $ini_data['MySQL']['dbname'];
+        #$iniData = parse_ini_file('DB/config.ini', true);
+        $iniData = parse_ini_file('../DB/config.ini', true);
+        //print_r($ini_data['MySQL']);
+        //print_r($ini_data['PostgreSQL']);
+        //print_r($ini_data['SQLite']);
+        #echo $ini_data['MySQL']['dbname'];
         
         return match ($this){
-            self::MySQL =>  "mysql:host=".$ini_data['MySQL']['host'].
-                            ";dbname=".$ini_data['MySQL']['dbname'].
+            self::MySQL =>  "mysql:host=".$iniData['MySQL']['host'].
+                            ";dbname=".$iniData['MySQL']['dbname'].
                             ";charset=utf8",
             
-            self::SQLite => "sqlite:".$ini_data['SQLite']['path'],
+            self::SQLite => "sqlite:".$iniData['SQLite']['path'],
 
-            self::PostgreSQL => "pgsql:host=".$ini_data['PostgreSQL']['host'].
-                                ";port=".$ini_data['PostgreSQL']['port'].
-                                ";dbname=".$ini_data['PostgreSQL']['dbname'].";",
+            self::PostgreSQL => "pgsql:host=".$iniData['PostgreSQL']['host'].
+                                ";port=".$iniData['PostgreSQL']['port'].
+                                ";dbname=".$iniData['PostgreSQL']['dbname'].";",
             default => '',
         };
     }
