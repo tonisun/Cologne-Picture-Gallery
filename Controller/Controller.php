@@ -1,0 +1,9 @@
+<?php
+
+/**
+ * 
+ * @tonisun
+ */
+interface Controller {
+
+}
