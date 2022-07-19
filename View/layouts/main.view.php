@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="View/assets/css/styles.css">
     <link rel="stylesheet" href="View/assets/css/simple.css">
     <link rel="stylesheet" href="View/assets/css/custom.css">
-
     <title>MVC</title>
 </head>
 
@@ -18,7 +17,15 @@
     <header>
         <h1>Hallo MVC with PHP-8.1</h1>
         <h4>My Cologne</h4>
-        <nav>
-
-        </nav>
     </header>
+
+    <main>
+        <?php echo $content; ?>
+    </main>
+
+    <footer>
+        <p>&copy <?= date("Y"); ?> ToniSun</p>
+    </footer>
+</body>
+
+</html>

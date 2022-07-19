@@ -1,4 +1,9 @@
-<p>&copy <?= date("Y"); ?> ToniSun</p>
+<footer>
+    <p>&copy <?= date("Y"); ?> ToniSun</p>
+</footer>
+
+
+
 </body>
 
 </html>
