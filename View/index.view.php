@@ -1,3 +1,8 @@
+<?php
+    include_once('View/inc/header.php');
+?>
+
+<?php ?>
 <!DOCTYPE html>
 <html lang="de">
 
@@ -21,7 +26,6 @@
             <h4>Meine Bilder</h4>
         </div>
     </div>
-
     <?php
 // echo '<pre>';
 // var_dump($images[0]);
@@ -51,5 +55,5 @@
     <?php endif; ?>
 
     <?php
-    include_once('inc/footer.php');
+    include_once('View/inc/footer.php');
 ?>
