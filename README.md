@@ -37,8 +37,17 @@ dbname = 'images'
 
 >## Sequence Diagram
 [![Sequence Diagram](/out/doc/mvc_seq_dia/mvc_seq_dia.svg)](/out/doc/mvc_seq_dia.plantuml)
-&copy; 2022 ToniSun, Inc.
+
 
 >## Use Case Diagram
 [![USE Case Diagram](/out/doc/mvc_usc_dia/mvc_usc_dia.svg)](/out/doc/mvc_usc_dia.plantuml)
+
+
+
+
+
+
+
+
+
 &copy; 2022 ToniSun, Inc.
