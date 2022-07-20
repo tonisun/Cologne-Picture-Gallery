@@ -12,6 +12,6 @@ $images =$ic->fetchAll();
 
 
 
-render(__DIR__.'/View/image.view.php', [
+render(__DIR__.'/View/Image.view.php', [
     'images' => $images
 ]);

@@ -1,0 +1,5 @@
+@startuml
+:ImageModel;
+:ImageController;
+:image.view;
+@enduml
