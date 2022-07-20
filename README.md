@@ -6,3 +6,5 @@ SQLite, MySQL, PostgreSQL
 >## Sequence Diagram
 [![MVC Sequence Diagram](/out/doc/mvc_classes/mvc_seq_dia.svg)](/out/doc/mvc_seq_dia.plantuml)
 &copy; 2022 ToniSun, Inc.
+
+>## Class

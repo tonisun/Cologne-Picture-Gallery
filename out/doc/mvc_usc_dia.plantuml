@@ -1,0 +1,15 @@
+@startuml
+
+left to right direction
+
+actor "Web User" as wu
+
+rectangle "Cologne Picture Gallery" {
+    usecase "see some pictures" as uc1
+    usecase "upload picture" as uc2
+    usecase "delete picture" as uc3
+}
+
+wu -> uc1
+
+@enduml

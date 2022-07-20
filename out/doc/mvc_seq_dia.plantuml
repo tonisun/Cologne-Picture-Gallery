@@ -1,9 +1,9 @@
 @startuml
-actor Web_User
-boundary Index
-boundary MainView
-boundary ImageView
-control ImageController
+actor "Web User"
+boundary "index.view"
+boundary "Main.view"
+boundary "ImageView"
+control "ImageController"
 entity DB
 entity DBE
 entity ImageModel
