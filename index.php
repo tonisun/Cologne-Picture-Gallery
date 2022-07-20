@@ -7,7 +7,7 @@ require_once __DIR__ .'/Controller/ImageController.php';
 
 
 $ic = new ImageController(new DB(DBE::MySQL));
-$images =$ic->fetchAll();
+$images = $ic->fetchAll();
 
 
 

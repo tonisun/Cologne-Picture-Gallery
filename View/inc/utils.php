@@ -1,13 +1,17 @@
 <?php
 
 function render($path, array $data = []) {
+     
     ob_start();
     extract($data);
+    
+    // Data 4 Image.view
     require $path;
 
-    $content = ob_get_contents();
+    $content = ob_get_contents(); 
     ob_end_clean();
 
+    //Data 4 Main.view
     require __DIR__ .'/../../View/layouts/Main.view.php';
 }
 

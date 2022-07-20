@@ -1,0 +1,37 @@
+@startuml
+actor Web_User
+boundary Index
+boundary MainView
+boundary ImageView
+control ImageController
+entity DB
+entity DBE
+entity ImageModel
+database images
+collections Images
+Web_User -> Index: 1:Need to see some Pictures
+
+Index -->ImageController: 1:1 new ImageController( new DB ( DBE ) ) 
+
+ImageController --> DB : new DB ( BDE::MySQL)
+
+DBE <--> DB: getDNS(); getUser(); getPass()
+
+ImageController -> images: ImageController->fetchAll() : $stmt = $this->pdo->prepare(SELECT id,filename,title,description FROM images)
+
+images <-->Images:
+
+images <-> ImageController: ImageController->fetchAll() :  $stmt ->execute() 
+
+ImageController <--> ImageModel : $results = $stmt->fetchAll(PDO::FETCH_CLASS, ImageModel::class)
+
+ImageController -> Index : 1:0|1|* $images array
+
+Index -> ImageView: render ()
+
+ImageView -> MainView: + layout
+
+MainView -> Index
+
+Index -> Web_User: he/she dont know how many work it was ;-)
+@enduml
