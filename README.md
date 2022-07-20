@@ -11,7 +11,7 @@ host = 'localhost'
 port = 3306
 dbname = 'images'
 user = 'root'
-password = ''
+password = 'your_password'
 
 [PostgreSQL_11]
 version = 11
