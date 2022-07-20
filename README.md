@@ -4,7 +4,9 @@ SQLite, MySQL, PostgreSQL
 <a href="https://egosanto.de/" target="_blank">![](/View/assets/images/colorful-wall.png)</a>
 
 >## Sequence Diagram
-[![MVC Sequence Diagram](/out/doc/mvc_classes/mvc_seq_dia.svg)](/out/doc/mvc_seq_dia.plantuml)
+[![Sequence Diagram](/out/doc/mvc_seq_dia/mvc_seq_dia.svg)](/out/doc/mvc_seq_dia.plantuml)
 &copy; 2022 ToniSun, Inc.
 
->## Class
+>## Use Case Diagram
+[![USE Case Diagram](/out/doc/mvc_usc_dia/mvc_usc_dia.svg)](/out/doc/mvc_usc_dia.plantuml)
+&copy; 2022 ToniSun, Inc.

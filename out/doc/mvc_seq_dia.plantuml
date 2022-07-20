@@ -1,37 +1,37 @@
 @startuml
-actor "Web User"
-boundary "index.view"
-boundary "Main.view"
-boundary "ImageView"
-control "ImageController"
+actor "Web User" as WU
+boundary "index" as i
+boundary "Main.view" as Mv
+boundary "Image.View" as IV
+control "ImageController" as IC
 entity DB
 entity DBE
 entity ImageModel
 database images
 collections Images
-Web_User -> Index: 1:Need to see some Pictures
+WU -> i: 1:Need to see some Pictures
 
-Index -->ImageController: 1:1 new ImageController( new DB ( DBE ) ) 
+i --> IC: 1:1 new ImageController( new DB ( DBE ) ) 
 
-ImageController --> DB : new DB ( BDE::MySQL)
+IC --> DB : new DB ( BDE::MySQL)
 
 DBE <--> DB: getDNS(); getUser(); getPass()
 
-ImageController -> images: ImageController->fetchAll() : $stmt = $this->pdo->prepare(SELECT id,filename,title,description FROM images)
+IC -> images: ImageController->fetchAll() : $stmt = $this->pdo->prepare(SELECT id,filename,title,description FROM images)
 
 images <-->Images:
 
-images <-> ImageController: ImageController->fetchAll() :  $stmt ->execute() 
+images <-> IC: ImageController->fetchAll() :  $stmt ->execute() 
 
-ImageController <--> ImageModel : $results = $stmt->fetchAll(PDO::FETCH_CLASS, ImageModel::class)
+IC <--> ImageModel : $results = $stmt->fetchAll(PDO::FETCH_CLASS, ImageModel::class)
 
-ImageController -> Index : 1:0|1|* $images array
+IC -> i : 1:0|1|* $images array
 
-Index -> ImageView: render ()
+i -> IV: render ()
 
-ImageView -> MainView: + layout
+IV -> Mv: + layout
 
-MainView -> Index
+Mv -> i
 
-Index -> Web_User: he/she dont know how many work it was ;-)
+i -> WU: he/she dont know how many work it was ;-)
 @enduml
