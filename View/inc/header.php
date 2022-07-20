@@ -17,7 +17,7 @@
 <body>
     <header>
         <h1>Hallo MVC with PHP-8.1</h1>
-        <h4>My Cologne</h4>
+        <h4>Cologne Picture Gallery</h4>
         <nav>
 
         </nav>
