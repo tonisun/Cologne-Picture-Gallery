@@ -3,7 +3,7 @@
 SQLite, MySQL, PostgreSQL
 <a href="https://egosanto.de/" target="_blank">![](/View/assets/images/colorful-wall.png)</a>
 
-> ## 1. Make your own DB/config.ini
+> ## 1. Make your own DB/config.ini file
 <pre>
 [MySQL]
 version = 10
@@ -29,15 +29,17 @@ dbname = 'images'
 user = 'postgres'
 password = 'your_password'
 
-
 [SQLite]
 path = 'DB/images.db'
 dbname = 'images'
 </pre>
 
->## Sequence Diagram
-[![Sequence Diagram](/out/doc/mvc_seq_dia/mvc_seq_dia.svg)](/out/doc/mvc_seq_dia.plantuml)
+> ## 2. PlugIns for UML
+[![PlantUML](/View/assets/images/PlantUML.png)](https://plantuml.com/de/)
 
+>## Sequence Diagram
+
+[![Sequence Diagram](/out/doc/mvc_seq_dia/mvc_seq_dia.svg)](/out/doc/mvc_seq_dia.plantuml)
 
 >## Use Case Diagram
 [![USE Case Diagram](/out/doc/mvc_usc_dia/mvc_usc_dia.svg)](/out/doc/mvc_usc_dia.plantuml)
