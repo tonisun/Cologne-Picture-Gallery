@@ -44,7 +44,8 @@ dbname = 'images'
 >## Use Case Diagram
 [![USE Case Diagram](/out/doc/mvc_usc_dia/mvc_usc_dia.svg)](/out/doc/mvc_usc_dia.plantuml)
 
-
+>## Class Diagram
+[![Class Diagram](/out/doc/mvc_cla_dia/mvc_cla_dia.svg)](/out/doc/mvc_cla_dia.plantuml)
 
 
 

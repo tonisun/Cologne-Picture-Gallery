@@ -28,7 +28,6 @@ class ImageController implements Controller {
     public function fetchAll(): array | null {
         $sql = 'SELECT id, filename, title, description FROM images ORDER BY id ASC';
         $stmt = $this->pdo->prepare($sql);
-        #$stmt = $this->pdo->execute($sql);
         $stmt->execute();
         $results = $stmt->fetchAll(PDO::FETCH_CLASS, ImageModel::class);
         //var_dump($results);

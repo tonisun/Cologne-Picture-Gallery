@@ -1,5 +1,5 @@
 @startuml
-!theme materia-outline
+
 left to right direction
 
 actor "Web User" as wu

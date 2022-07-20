@@ -1,0 +1,66 @@
+@startuml
+rectangle Model{
+class ImageModel implements Image {
+    - id : int 
+    - filename : string
+    - title : string
+    - description : string
+    + int getID()
+    + string getFileName()
+    + string getTitle()
+    + string getDescription()
+}
+}
+
+rectangle "Controller" as C {
+class DB {
+    - iniPath = "../DB/config.ini"
+    - dbe : DBE
+    - dns : string
+    - user : string 
+    - pass : string
+    + getDNS() : string
+    + getUser() : string
+    + getPass() : string
+}
+
+interface Controller {
+    + fetchAll() : array <Object> | null
+}
+
+class ImageController implements Controller{
+    - pdo : PDO
+    - db : DB
+    + fetchAll() :  array <ImageModel> | null
+
+}
+
+package "PHP 8.1" <<Folder>> {
+    class PDO {
+        + prepare() : stmt
+        + execute() : stmt
+        + fetchAll(PDO::FETCH_CLASS, ImageModel::class) : array<ImageModel>
+    }
+}
+
+enum DBE{
+    MySQL
+    SQLite
+    PostgreSQL
+}
+
+ImageController "1" *-- "1" PDO
+DB "1" *-- "1" DBE
+ImageController "1" *-- "1" DB
+} 
+
+
+rectangle View {
+    class ImageView {
+
+    }
+}
+
+View <-> C
+C <-> Model 
+@enduml
