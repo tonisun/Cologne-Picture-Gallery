@@ -10,6 +10,6 @@ rectangle "Cologne Picture Gallery" {
     usecase "delete picture" as uc3
 }
 
-wu -> uc1
+wu --> uc1
 
 @enduml
