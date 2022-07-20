@@ -35,7 +35,7 @@ dbname = 'images'
 </pre>
 
 > ## 2. Add PlugIn for UML
-[![PlantUML](/View/assets/images/PlantUML.png)](https://plantuml.com/de/)
+[![PlantUML](/View/assets/images/PlantUML_hell.png)](https://plantuml.com/de/)
 
 >## Sequence Diagram
 
