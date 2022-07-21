@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="View/assets/images/favicon_red.ico" type="image/x-icon">
-    <link rel="stylesheet" href="View/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="View/assets/css/styles.css">
-    <link rel="stylesheet" href="View/assets/css/simple.css">
-    <link rel="stylesheet" href="View/assets/css/custom.css">
+    <link rel="shortcut icon" href="app/core/View/assets/images/favicon_red.ico" type="image/x-icon">
+    <link rel="stylesheet" href="app/core/View/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app/core/View/assets/css/styles.css">
+    <link rel="stylesheet" href="app/core/View/assets/css/simple.css">
+    <link rel="stylesheet" href="app/core/View/assets/css/custom.css">
     <title>MVC</title>
 </head>
 
@@ -26,7 +26,7 @@
     <footer>
         <p>&copy <?= date("Y"); ?> ToniSun</p>
     </footer>
-    <script src="View/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="app/core/View/assets/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

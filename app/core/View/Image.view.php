@@ -4,7 +4,7 @@
         <div class="image-gallery">
             <?php foreach($images AS $image): ?>
             <figure class="image-gallery-item">
-                <img class="image-gallery-image" src="View/assets/images/<?php echo $image->getFileName(); ?>"
+                <img class="image-gallery-image" src="app/core/View/assets/images/<?php echo $image->getFileName(); ?>"
                     alt="Cologne Pics">
                 <figcaption><b><?php echo $image->getId(); ?>. <?php echo esc($image->getTitle()); ?></b>
                     <?php echo esc($image->getDescription()); ?>
