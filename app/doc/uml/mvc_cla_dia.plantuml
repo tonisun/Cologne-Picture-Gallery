@@ -1,4 +1,5 @@
 @startuml
+rectangle "Cologne Picture Gallery" {
 rectangle Model{
 class ImageModel implements Image {
     - id : int 
@@ -63,4 +64,6 @@ rectangle View {
 
 View <-> C
 C <-> Model 
+
+}
 @enduml

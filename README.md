@@ -1,7 +1,10 @@
-# Hallo MVC with PHP 8.1
+# Cologne Picture Gallery
 
 SQLite, MySQL, PostgreSQL
-<a href="https://egosanto.de/" target="_blank">![](/View/assets/images/colorful-wall.png)</a>
+<a href="https://egosanto.de/" target="_blank">![Project Logo](out/assets/images/colorful-wall_sm.png)</a>
+
+> ## 0. Project Structure
+![Project Structure](/out/assets/images/AppSceleton.png)
 
 > ## 1. Make your own DB/config.ini file
 <pre>
@@ -35,17 +38,16 @@ dbname = 'images'
 </pre>
 
 > ## 2. Add PlugIn for UML
-[![PlantUML](/View/assets/images/PlantUML_hell.png)](https://plantuml.com/de/)
-
->## Sequence Diagram
-
-[![Sequence Diagram](/out/doc/mvc_seq_dia/mvc_seq_dia.svg)](/out/doc/mvc_seq_dia.plantuml)
+[![PlantUML](/out/assets/images/PlantUML_hell.png)](https://plantuml.com/de/)
 
 >## Use Case Diagram
 [![USE Case Diagram](/out/doc/mvc_usc_dia/mvc_usc_dia.svg)](/out/doc/mvc_usc_dia.plantuml)
 
+>## Sequence Diagram for "see some pictures" case
+[![Sequence Diagram](/out/doc/mvc_seq_dia/mvc_seq_dia.svg)](/out/doc/mvc_seq_dia.plantuml)
+
 >## Class Diagram
-[![Class Diagram](/out/doc/mvc_cla_dia/mvc_cla_dia.svg)](/out/doc/mvc_cla_dia.plantuml)
+[![Class Diagram](/out/app/doc/uml/mvc_cla_dia/mvc_cla_dia.svg)](/app/doc/uml/mvc_cla_dia.plantuml)
 
 
 
