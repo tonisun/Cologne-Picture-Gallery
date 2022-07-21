@@ -1,6 +1,9 @@
 <?php
+namespace ColognePictureGallery\Controller;
 
-require_once('Controller.php');
+use ColognePictureGallery\Controller\Controller;
+
+#require_once('Controller.php');
 require_once('Model/DB.php');
 require_once('Model/ImageModel.php');
 

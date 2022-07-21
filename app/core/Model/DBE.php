@@ -1,4 +1,5 @@
 <?php
+namespace ColognePictureGallery\Model;
 
 /**
  * DataBaseEngies

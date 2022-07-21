@@ -1,6 +1,8 @@
 <?php
+namespace ColognePictureGallery\Model;
 
-include_once('DBE.php');
+use ColognePictureGallery\Model\DBE;
+#include_once('DBE.php');
 
 /**
  * 

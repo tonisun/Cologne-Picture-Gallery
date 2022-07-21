@@ -1,4 +1,6 @@
 <?php
+namespace ColognePictureGallery\Model;
+
 /**
  * 
  * @tonisun
