@@ -59,12 +59,12 @@ enum DBE : string {
     }
 }
 //- DNS alt
-$dbe = DBE::SQLite;
-echo '<pre>';
-echo $dbe->getDNS();
+// $dbe = DBE::SQLite;
+// echo '<pre>';
+// echo $dbe->getDNS();
 // echo $dbe->getUser();
 // echo $dbe->getPass();
-echo '</pre>';
+// echo '</pre>';
 
 // echo '<pre>';
 // print_r($dbe);

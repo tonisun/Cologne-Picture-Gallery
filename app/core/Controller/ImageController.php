@@ -21,10 +21,10 @@ class ImageController implements Controller {
                 PDO::ATTR_EMULATE_PREPARES => false,
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
             ]);
-          } catch (PDOException $e) {
+        } catch (PDOException $e) {
             echo "Probleme mit der ".$db->getDNS()." Datenbankverbindung...";
             die();
-          }
+        }
     }
 
     public function fetchAll(): array | null {

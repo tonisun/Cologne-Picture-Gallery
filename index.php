@@ -11,9 +11,9 @@ require_once __DIR__ . '/app/utils/autoload.php';
 
 
 
-//$ic = new ImageController(new DB(DBE::MySQL));
- $ic = new ImageController(new DB(DBE::SQLite));
-// $ic = new ImageController(new DB(DBE::SQLite));
+// $ic = new ImageController(new DB(DBE::MySQL));
+$ic = new ImageController(new DB(DBE::SQLite));
+// $ic = new ImageController(new DB(DBE::PostgreSQL));
 $images = $ic->fetchAll();
 
 
