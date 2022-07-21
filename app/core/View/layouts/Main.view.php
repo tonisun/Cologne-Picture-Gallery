@@ -26,6 +26,7 @@
     <footer>
         <p>&copy <?= date("Y"); ?> ToniSun</p>
     </footer>
+    <script src="View/assets/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
