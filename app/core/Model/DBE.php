@@ -14,7 +14,9 @@ enum DBE : string {
     case SQLite = 'sqlite';
     case PostgreSQL = 'pgsql';
     
-
+    /**
+     * $dsn = "pgsql:host=$host;port=5432;dbname=$db;";
+     */
     public function getDNS(): string { 
         $iniData = parse_ini_file((string) new DBConfig(), true);
         
@@ -32,6 +34,11 @@ enum DBE : string {
         };
     }
 
+    /**
+     * 
+     * "pgsql:host=$host;port=5432;dbname=$db;user=$username;password=$password";
+ 
+     */
     public function getUser(): string { 
         $iniData = parse_ini_file(new DBConfig(), true);
         
@@ -45,6 +52,9 @@ enum DBE : string {
         };
     }
 
+    /**
+     * "pgsql:host=$host;port=5432;dbname=$db;user=$username;password=$password";
+     */
     public function getPass(): string { 
         $iniData = parse_ini_file(new DBConfig(), true);
         

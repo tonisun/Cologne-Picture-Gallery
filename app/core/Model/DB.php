@@ -34,11 +34,9 @@ class DB {
       } else if ($dbe->value === 'sqlite'){
         $this->dbe = $dbe;
         $this->dns = $this->dbe->getDNS();
-        $this->user = $this->dbe->getUser();
-        $this->pass = $this->dbe->getPass();
       } else if ($dbe->value === 'pgsql') {
         $this->dbe = $dbe;
-        $this->dns = $this->dbe->getDNS();
+        $this->dns = $this->dbe->getDNS() ;
         $this->user = $this->dbe->getUser();
         $this->pass = $this->dbe->getPass();
       }
