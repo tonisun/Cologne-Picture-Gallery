@@ -1,1 +1,3 @@
+# Sign "-" prohibits the overview page and directory
 Options -Indexes
+
