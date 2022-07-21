@@ -12,7 +12,7 @@ function render($path, array $data = []) {
     ob_end_clean();
 
     //Data 4 Main.view
-    require __DIR__ .'/../../View/layouts/Main.view.php';
+    require __DIR__ .'/../../app/core/View/layouts/Main.view.php';
 }
 
 /**

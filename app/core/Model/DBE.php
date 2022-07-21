@@ -1,6 +1,8 @@
 <?php
 namespace ColognePictureGallery\Model;
 
+use ColognePictureGallery\DB\DBConfig;
+
 /**
  * DataBaseEngies
  * 
@@ -13,12 +15,7 @@ enum DBE : string {
     
 
     public function getDNS(): string { 
-        $iniData = parse_ini_file('DB/config.ini', true);
-        #$iniData = parse_ini_file('../DB/config.ini', true);
-        //print_r($ini_data['MySQL']);
-        //print_r($ini_data['PostgreSQL']);
-        //print_r($ini_data['SQLite']);
-        #echo $ini_data['MySQL']['dbname'];
+        $iniData = parse_ini_file((string)new DBConfig(), true);
         
         return match ($this){
             self::MySQL =>  "mysql:host=".$iniData['MySQL']['host'].
@@ -35,12 +32,7 @@ enum DBE : string {
     }
 
     public function getUser(): string { 
-        $iniData = parse_ini_file('DB/config.ini', true);
-        #$iniData = parse_ini_file('../DB/config.ini', true);
-        //print_r($ini_data['MySQL']);
-        //print_r($ini_data['PostgreSQL']);
-        //print_r($ini_data['SQLite']);
-        #echo $ini_data['MySQL']['dbname'];
+        $iniData = parse_ini_file(new DBConfig(), true);
         
         return match ($this){
             self::MySQL =>  $iniData['MySQL']['user'],
@@ -53,12 +45,7 @@ enum DBE : string {
     }
 
     public function getPass(): string { 
-        $iniData = parse_ini_file('DB/config.ini', true);
-        #$iniData = parse_ini_file('../DB/config.ini', true);
-        //print_r($ini_data['MySQL']);
-        //print_r($ini_data['PostgreSQL']);
-        //print_r($ini_data['SQLite']);
-        #echo $ini_data['MySQL']['dbname'];
+        $iniData = parse_ini_file(new DBConfig(), true);
         
         return match ($this){
             self::MySQL =>  $iniData['MySQL']['password'],

@@ -17,7 +17,7 @@ spl_autoload_register(function ($class) {
     $prefix = 'ColognePictureGallery\\';
 
     // base directory for the namespace prefix
-    $base_dir = __DIR__ . '/app/core/';
+    $base_dir = __DIR__ . '/../../app/core/';
 
     // does the class use the namespace prefix?
     $len = strlen($prefix);
