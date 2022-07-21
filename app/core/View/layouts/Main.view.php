@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="app/core/View/assets/css/styles.css">
     <link rel="stylesheet" href="app/core/View/assets/css/simple.css">
     <link rel="stylesheet" href="app/core/View/assets/css/custom.css">
-    <title>MVC</title>
+    <title>Cologne Picture Gallery</title>
 </head>
 
 <body>
     <header>
-        <h1>Hallo MVC with PHP-8.1</h1>
-        <h3>Cologne Picture Gallery</h3>
+        <h1>Cologne Picture Gallery</h1>
+        <p>&copy; <?= date("Y-m-d"); ?> by ToniSun</p>
     </header>
 
     <main>
@@ -24,7 +24,7 @@
     </main>
 
     <footer>
-        <p>&copy <?= date("Y"); ?> ToniSun</p>
+        <p>&copy <?= date("Y"); ?>by ToniSun</p>
     </footer>
     <script src="app/core/View/assets/js/bootstrap.bundle.min.js"></script>
 </body>

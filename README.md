@@ -36,8 +36,12 @@ password = 'your_password'
 path = 'DB/images.db'
 dbname = 'images'
 </pre>
+>## 2. PDO extention for SQLite & PostgreSQL
+In ***php.ini*** you must activate PDO extention for SQLite and PostgreSQL
+![PDO_DBMS_extentions](/out/assets/images/php.ini%20pdo%20extention.png)
+<br>
 
-> ## 2. Add PlugIn for UML
+> ## 3. Add PlugIn for UML and have nice day
 [![PlantUML](/out/assets/images/PlantUML_hell.png)](https://plantuml.com/de/)
 
 >## Use Case Diagram
