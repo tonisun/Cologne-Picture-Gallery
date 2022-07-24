@@ -1,7 +1,11 @@
 # Cologne Picture Gallery
 
 SQLite, MySQL, PostgreSQL
-<a href="https://egosanto.de/" target="_blank">![Project Logo](out/assets/images/colorful-wall_sm.png)</a>
+[![Project Logo](out/assets/images/colorful-wall_sm.png)](https://github.com/tonisun/Cologne-Picture-Gallery)
+
+![tonisun´s Cologne-Picture-Gallery](/out/assets/images/ColognePictureGalleryScreenshot.png)
+
+
 
 > ## 0. Project Structure
 ![Project Structure](/out/assets/images/AppSceleton.png)
